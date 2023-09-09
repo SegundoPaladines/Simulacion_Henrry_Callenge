@@ -11,7 +11,14 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  var numeros = [];
+  var regex_num = /^[0-9]+$/;
+  array.forEach(elemento => {
+    if(regex_num.test(elemento)){
+      numeros.push(elemento);
+    }
+  });
+  return numeros;
 }
 
 // No modifiques nada debajo de esta linea //
